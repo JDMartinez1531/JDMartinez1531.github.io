@@ -13,3 +13,6 @@ section {
 .jumbotron.jumbotron-fluid {
   background-color: #e3f2fd;
 }
+
+.bg {
+    background-image: url("#");
