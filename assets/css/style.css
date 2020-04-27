@@ -13,12 +13,3 @@ section {
 .jumbotron.jumbotron-fluid {
   background-color: #e3f2fd;
 }
-
-.bg {
-  background-image: url(/JDMartinez1531.github.io/assets/bg-masthead.jpg);
-  height: 100%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
