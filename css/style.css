@@ -9,3 +9,7 @@ section {
 .container {
   padding-top: 100px;
 }
+
+.jumbotron.jumbotron-fluid {
+  background-color: #e3f2fd;
+}
