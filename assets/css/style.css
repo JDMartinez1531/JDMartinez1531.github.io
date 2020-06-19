@@ -13,3 +13,23 @@ section {
 .jumbotron.jumbotron-fluid {
   background-color: #e3f2fd;
 }
+
+.uk-texarea {
+  padding: 12px;
+  width: -webkit-fill-available;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-end;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-icons {
+  margin-right: 20px;
+}
