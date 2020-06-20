@@ -21,8 +21,7 @@ section {
 
 #contact {
   display: flex;
-  justify-content: space-around;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 
 .submit-button {
@@ -47,4 +46,12 @@ body {
 
 .uk-navbar-nav>li>a {
   color: #759AAB;
+}
+
+.gitLinks {
+  margin-left:50px;
+}
+
+.fixH {
+  height:20%;
 }
