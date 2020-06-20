@@ -33,3 +33,18 @@ section {
 .contact-icons {
   margin-right: 20px;
 }
+
+body {
+  background-color: #F5E6E0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  height: 100%;
+  position: relative;
+}
+
+#nav {
+  background-color:#2F394D
+}
+
+.uk-navbar-nav>li>a {
+  color: #759AAB;
+}

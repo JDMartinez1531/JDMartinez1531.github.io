@@ -13,11 +13,11 @@
 <body>
 
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+        <nav id="nav" class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <li>
-                        <a class="uk-navbar-toggle" uk-navbar-toggle-icon></a>
+                        <a class="linkText uk-navbar-toggle" uk-navbar-toggle-icon></a>
                         <div class="uk-navbar-dropdown" uk-dropdown="mode: click">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li><a href="#top">About</a></li>
@@ -41,107 +41,94 @@
         <div class="uk-container">
             <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                 <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                    <img src="assets\profile-05.jpg" alt="" uk-cover>
+                    <img src="assets\images\profile-05.jpg" alt="" uk-cover>
                     <canvas width="300" height="450"></canvas>
                 </div>
                 <div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">Media Right</h3>
+                        <h3 class="uk-card-title">About Me</h3>
                         <p>Joshua Martinez is an aspiring full-stack web developer who
                             currently works as a professional chef. Joshua has over a decade
                             of successful experience operating large scale kitchens and
                             employee management. After a year of planning, saving, and a
                             little extra time due to quarantine, Joshua has finally decided
                             to make the pivot and dive into web developement.
-                        <p><a href="https://github.com/JDMartinez1531?tab=repositories">Github</a></p>
-                        <p><a href="www.linkedin.com/in/joshua-martinez-88629016b">LinkedIn</a></p>
+                        <p>See what I've been up to on github.</p><a uk-icon="icon: github"
+                            href="https://github.com/JDMartinez1531?tab=repositories"></a>
+                        <p>Add me on LinkedIn.</p><a uk-icon="icon: linkedin"
+                            href="https://www.linkedin.com/in/joshuadmartinez/"></a>
+
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <hr>
     <a id="portfolio"></a>
+    <hr>
+
     <div class="uk-section">
         <div class="uk-container">
             <h1>
-                My Portfolio (work in progress)
+                Portfolio
             </h1>
 
-            <div class="uk-child-width-1-2@m uk-grid-small-match uk-grid" uk-grid>
-                <div class="uk-card uk-card-hover uk-grid-collapse uk-child-width-1-2@s uk-card-large">
-                    <div class="uk-card-media-left uk-cover-container">
-                        <img src="assets\images\travel-board-img2.png" alt="travel-board" uk-cover>
-                        <canvas width="600" height="400"></canvas>
-                    </div>
+            <div class="uk-child-width-1-2@m uk-grid-small uk-grid" uk-grid>
+
+                <div class="uk-card uk-card-secondary" style="padding-left:0">
+
                     <div class="uk-card-body">
-                        <h3 class=uk-card-title>Travel-Board</h3>
-                        <p>A travel plan dashboard.</p>
+                        <h3 class=uk-card-title><a
+                                href="https://jdmartinez1531.github.io/travel-board/">Travel-Board</a></h3>
+                        <p>An easy to use, mobile first web application for browsing popular travel destinations and
+                            planning your vacation. This application will allow you to find places of
+                            interest and organize your travel plans all in one place.</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img class="uk-width-1-1" src="assets\images\travelb7.png" alt="travel-board">
                     </div>
                 </div>
-                <div class="uk-card uk-card-default uk-child-width-1-2" uk-grid>
-                    <div class="uk-card-media-left uk-cover-container">
-                        <img src="assets\images\travel-board-img2.png" alt="" uk-cover>
-                        <canvas width="600" height="400"></canvas>
+                <div class="uk-card uk-card-secondary" style="padding-left:0">
+
+                    <div class="uk-card-body">
+                        <h3 class=uk-card-title><a href="https://jdmartinez1531.github.io/06-Weather-Dashboard/">Weather
+                                Dashboard</a>
+                        </h3>
+                        <p>A weather dashboard that displays weather data via third party API</p>
                     </div>
-                    <div>
-                        <div class="uk-card-body">
-                            <h3 class=uk-card-title>Travel-Board</h3>
-                            <p>A travel plan dashboard.</p>
-                        </div>
+                    <div class="uk-card-media-bottom">
+                        <img class="uk-width-1-1" src="assets\images\weatherappcap1.png" alt="weather app">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-secondary" style="padding-left:0">
+
+                    <div class="uk-card-body">
+                        <h3 class=uk-card-title><a href="https://jdmartinez1531.github.io/04-code-quiz/">Code
+                                Quiz</a></h3>
+                        <p>A project that uses javascript to dynamically generate quiz questions. Saves high scores
+                            to local storage.</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img class="uk-width-1-1" src="assets\images\codequiz.png" alt="code quiz">
+                    </div>
+                </div>
+                <div class="uk-card uk-card-secondary" style="padding-left:0">
+
+                    <div class="uk-card-body">
+                        <h3 class=uk-card-title><a href="https://jdmartinez1531.github.io/password_generator/">Password
+                                Generator</a>
+                        </h3>
+                        <p>A project that uses JavaScript to generate a random password with options for length and
+                            types of characters inclueded.</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img class="uk-width-1-1" src="assets\images\passgen3.png" alt="code quiz">
                     </div>
                 </div>
 
 
-                <div class="col mb-4">
-                    <div class="card">
-                        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Coming Soon...</h5>
-                            <p class="card-text">
-                                A friend's business site...
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Coming Soon...</h5>
-                            <p class="card-text">
-                                My brother's band EPK
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Coming Soon...</h5>
-                            <p class="card-text">
-                                An awesome website
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card">
-                        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Coming Soon...</h5>
-                            <p class="card-text">
-                                Somthing cool...
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <hr>
@@ -151,9 +138,6 @@
             <h2>
                 Contact Me
             </h2>
-            <p>
-                Please send a message and I will respond asap.
-            </p>
 
             <form class="uk-grid-small" id="contact-form" name="contact-form" action="https://formspree.io/xrgyzgnj"
                 method="POST" uk-grid>
@@ -177,6 +161,7 @@
                     <a class="contact-icons" href="tel:+5126580746" uk-icon="icon: receiver"></a>
                     <a class="contact-icons" href="mailto:jdmartinez1531@gmail.com" uk-icon="icon: mail"></a>
                 </div>
+
 
             </div>
         </div>
