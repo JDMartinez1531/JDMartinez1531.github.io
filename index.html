@@ -1,103 +1,182 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="assets\css\style.css" />
-  </head>
+</head>
 
-  <body>
-    <!-- add background -->
+<body>
 
-    <nav
-      class="navbar navbar-light navbar-expand-lg fixed-top"
-      style="background-color: #e3f2fd;"
-    >
-      <!-- figure out how to align logo -->
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="assets/logo.png"
-          width="40"
-          height="40"
-          class="d-inline-block align-top"
-          alt="silly logo"
-        />
-        Joshua Martinez
-      </a>
-      <!-- navbar toggle -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" href="index.html">About</a>
-          <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-          <a class="nav-item nav-link" href="contact.html">Contact</a>
-        </div>
-      </div>
-    </nav>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav id="nav" class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a class="linkText uk-navbar-toggle" uk-navbar-toggle-icon></a>
+                        <div class="uk-navbar-dropdown" uk-dropdown="mode: click">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#top">About</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact-form">Contact</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
 
-    <section>
-      <!-- jumbotron! set up two columns for photo and bio -->
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <img
-                src="assets/profile_10.jpg"
-                alt="handsome guy"
-                class="img-responsive"
-              />
             </div>
-            <div class="col-sm-6">
-              <h1 class="display-4">About Me</h1>
-              <p class="lead">
-                Joshua Martinez is an aspiring full-stack web developer who
-                currently works as a professional chef. Joshua has over a decade
-                of successful experience operating large scale kitchens and
-                employee management. After a year of planning, saving, and a
-                little extra time due to quarantine, Joshua has finally decided
-                to make the pivot and dive into web developement.
-              </p>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a class="uk-logo logo" href="#top" style="font-size: x-large">Joshua Martinez</a></li>
+                </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </nav>
+    </div>
+    <a id="top"></a>
+    <div class="uk-section about">
+        <div class="uk-container">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                    <img src="assets\images\profile-05.jpg" alt="" uk-cover>
+                    <canvas width="300" height="450"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">About Me</h3>
+                        <p>Joshua Martinez is an aspiring full-stack web developer who
+                            currently works as a professional chef. Joshua has over a decade
+                            of successful experience operating large scale kitchens and
+                            employee management. After a year of planning, saving, and a
+                            little extra time due to quarantine, Joshua has finally decided
+                            to make the pivot and dive into web developement.
+                        <p>See what I've been up to on github.</p><a uk-icon="icon: github"
+                            href="https://github.com/JDMartinez1531?tab=repositories"></a>
+                        <p>Add me on LinkedIn.</p><a uk-icon="icon: linkedin"
+                            href="https://www.linkedin.com/in/joshuadmartinez/"></a>
+                        <p><a class="resumeText" href="assets\files\JdmResume2020.pdf">My Resume</a></p>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="portfolio"></a>
+    <hr>
+
+    <div class="uk-section">
+        <div class="uk-container">
+            <h1>
+                Portfolio
+            </h1>
+
+            <div class="uk-child-width-1-2@m uk-grid-small uk-grid" uk-grid>
+
+                <div class="uk-card portCard">
+                    <div class="uk-card-body fixH">
+                        <h3 class=uk-card-title><a class="cardText"
+                                href="https://jdmartinez1531.github.io/travel-board/">Travel-Board</a><a
+                                class="gitLinks" uk-icon="icon: github"
+                                href="https://github.com/JDMartinez1531/travel-board"></a></h3>
+                        <p class="cardText">An easy to use, mobile first web application for browsing popular travel
+                            destinations finding places of interest, and organizing your travel plans.</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img class="uk-width-1-1" src="assets\images\travelb7.png" alt="travel-board">
+                    </div>
+                </div>
+
+                <div class="uk-card portCard">
+                    <div class="uk-card-body fixH">
+                        <h3 class=uk-card-title><a class="cardText"
+                                href="https://jdmartinez1531.github.io/06-Weather-Dashboard/">Weather
+                                Dashboard</a><a class="gitLinks" uk-icon="icon: github"
+                                href="https://github.com/JDMartinez1531/06-Weather-Dashboard"></a>
+                        </h3>
+                        <p class="cardText">A weather dashboard that displays weather data via third party API.
+                        </p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img class="uk-width-1-1" src="assets\images\weatherappcap1.png" alt="weather app">
+                    </div>
+                </div>
+
+                <div class="uk-card portCard">
+                    <div class="uk-card-body fixH">
+                        <h3 class=uk-card-title><a class="cardText"
+                                href="https://jdmartinez1531.github.io/04-code-quiz/">Code
+                                Quiz</a><a class="gitLinks" uk-icon="icon: github"
+                                href="https://github.com/JDMartinez1531/04-code-quiz"></a></h3>
+                        <p class="cardText">A project that uses javascript to dynamically generate quiz questions. Saves
+                            high scores to local storage.</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img class="uk-width-1-1" src="assets\images\codequiz.png" alt="code quiz">
+                    </div>
+                </div>
+
+                <div class="uk-card portCard">
+                    <div class="uk-card-body fixH">
+                        <h3 class=uk-card-title><a class="cardText"
+                                href="https://jdmartinez1531.github.io/password_generator/">Password
+                                Generator</a><a class="gitLinks" uk-icon="icon: github"
+                                href="https://github.com/JDMartinez1531/password_generator"></a>
+                        </h3>
+                        <p class="cardText">A project that uses JavaScript to generate a random password.</p>
+                    </div>
+                    <div class="uk-card-media-bottom">
+                        <img class="uk-width-1-1" src="assets\images\passgen3.png" alt="code quiz">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <a id="contact-form"></a>
+    <div class="uk-section">
+        <div class="uk-container">
+            <h2>
+                Contact Me
+            </h2>
+
+            <form class="uk-grid-small" id="contact-form" name="contact-form" action="https://formspree.io/xrgyzgnj"
+                method="POST" uk-grid>
+                <div class="uk-width-1">
+                    <input type="text" id="name" name="name" class="uk-input uk-form-controls" placeholder="Name" />
+                </div>
+                <div class="uk-width-1">
+                    <input type="text" id="email" name="email" class="uk-input uk-form-controls" placeholder="Email" />
+                </div>
+                <div class="uk-width-1">
+                    <textarea style="resize: vertical;" type="text" id="message" name="message"
+                        class="uk-texarea uk-form-controls" placeholder="Message"></textarea>
+                </div>
+                <div class="uk-width-1 submit-button">
+                    <button class="uk-button uk-button-primary"
+                        onclick="document.getElementById('contact-form').submit();" target="_blank">Send</button>
+                </div>
+            </form>
+            <div class="uk-grid-small">
+                <div class="uk-width-1" id="contact">
+                    <a class="contact-icons" href="tel:+5126580746" uk-icon="icon: receiver; ratio: 2"></a>
+                    <a class="contact-icons" href="mailto:jdmartinez1531@gmail.com" uk-icon="icon: mail; ratio: 2"></a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+</body>
+
 </html>

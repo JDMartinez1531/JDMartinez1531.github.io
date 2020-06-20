@@ -1,6 +1,4 @@
-section {
-  margin-top: 200px;
-}
+
 
 .mb-4 {
   padding: 50px;
@@ -10,6 +8,75 @@ section {
   padding-top: 100px;
 }
 
-.jumbotron.jumbotron-fluid {
-  background-color: #e3f2fd;
+.uk-texarea {
+  padding: 12px;
+  width: -webkit-fill-available;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-icons {
+  margin-right: 20px;
+  color: #101935;
+}
+.contact-icons:hover {
+  color:#627DD0
+}
+body {
+  background-color: #296EB4;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  height: 100%;
+  position: relative;
+  padding-bottom: 30vh;
+}
+
+#nav {
+  background-color:#101935
+}
+
+.uk-navbar-nav>li>a {
+  color: #C6C5B9;
+}
+
+.gitLinks {
+  margin-left:50px;
+  color:#C6C5B9
+}
+
+.fixH {
+  /* height:20%; */
+  background: #101935;
+}
+
+.uk-button-primary {
+  background-color: #214E34;
+}
+
+.resumeText {
+  color: #121E3F
+}
+h1 {
+  color:#101935
+}
+
+.cardText {
+  color:#C6C5B9
+}
+
+.portCard {
+  margin-top: 10vmin;
+}
+
+@media screen and (min-width: 960px) {
+  .fixH {
+    height:20%;
+  }
 }
